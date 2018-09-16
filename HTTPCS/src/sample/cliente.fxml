@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Cliente">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@FondoAPP_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="606.0" layoutX="20.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Fondo_de_foquito.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="104.0" layoutX="273.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Foco-apagado.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="URLTextField" layoutX="31.0" layoutY="173.0" onAction="#enviarInformacion" prefHeight="27.0" prefWidth="507.0" promptText="Escribe una dirección web aquí" />
+            <Button fx:id="enviarButton" layoutX="538.0" layoutY="173.0" mnemonicParsing="false" onAction="#enviarInformacion" prefHeight="27.0" prefWidth="54.0" style="-fx-background-color: #000000;" text="Buscar" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
+            <ImageView fx:id="encendido" disable="true" fitHeight="49.0" fitWidth="104.0" layoutX="273.0" layoutY="351.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@encendido.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="128.0" layoutX="237.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Anoneta.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="275.0" layoutY="132.0" style="-fx-text-fill: #ffffff;" text="Anoneta" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
